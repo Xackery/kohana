@@ -140,3 +140,4 @@ Route::set('default', '(<controller>(/<action>(/<id>)))')
 		'controller' => 'welcome',
 		'action'     => 'index',
 	));
+Kohana_Cookie::$salt = md5('$(%jjfdgopjRETO#$JT)');
