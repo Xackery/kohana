@@ -4,7 +4,10 @@ class Controller_Welcome extends Controller {
 
 	public function action_index()
 	{
-		$this->response->body('hello, world!');
+		$dbResult = DB::query(Database::SELECT, "SELECT * FROM employee")->execute();
+		print_r($dbResult->as_array());
+
+		$this->response->body('RAWR');
 	}
 
 } // End Welcome
